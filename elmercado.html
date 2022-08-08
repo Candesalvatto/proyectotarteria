@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!--links css-->
     <link rel="stylesheet" href="estilos/estilos.css">
 </head>
@@ -24,13 +25,14 @@
     <header class="contenedor">
         <!--Inicio cabecera-->
         <nav id="menu" class="cabecera">
-            <a href="index.html" target="_self" class="menu2"> <img src="imagenes/icono1.png" width="100"></a></li>
+            <a href="index.html" target="_self" class="menu2"> <img src="imagenes/icono1.png" class="logo_para_volver"></a>
         </nav>
     </header>
     <!--Fin cabecera-->
-    <div><img src="imagenes/Logocompletopara fondonegro.png" alt="Logo"  class="logo_completo"></div>
-    <div><img src="imagenes/collage1.jpg" class="logo_completo"></div>
-    <div class="logo_completo"><img src="imagenes/valegusti.jpg"></div>
+    <div><img src="imagenes/Logocompletopara fondonegro.png" alt="Logo" class="logo_completo"></div>
+    <div><img src="imagenes/collage1.jpg" class="collage"></div>
+    <div id="el_mercado">
+    <div class="valeygusti"><img src="imagenes/valegusti.jpg" class="img_valeygusti" ></div>
     <h1> <span class="biz2 parrafo_mercado2"> SOMOS VALE Y GUSTI </span></h1>
     <!--PRESENTACION -->
     <h2 class="parrafo_h2">
@@ -45,8 +47,9 @@
             En El Mercado vas a encontrar Dulces, Salsas, Aderezos, Especias, Conservas, Té, Escabeches y mucho más.
             Queremos que comas rico y te sientas bien.</p>
     </h2>
-    <h2 class="mercadillo">
-        <div><img src="imagenes/comerico.jpg" width="200"></div>
+    </div>
+    <div class="mercadillo">
+        <div><img src="imagenes/comerico.jpg" class="img_mercadillo"></div>
         <p class="parrafo_mercado1">El Mercado es un proyecto que nació de una idea tan chiquita hace un par de años,
             queríamos hacer algo que llene nuestros días de gratitud, hacer algo que haga que nos explote la cabeza de
             ideas, algo en donde podamos expresar nuestra pasión: generar buenos momentos.
@@ -55,40 +58,43 @@
             a poder regalarte y regalarle a los tuyos, buenos momentos, buenos sabores.
             Comer bien es una filosofía de vida.
             Y nosotros llegamos para que todo eso sea más fácil.</p>
-        <div><img src="imagenes/pizarra.jpg" width="200"></div>
-    </h2>
-    <seccion class="collage1">
+        <div><img src="imagenes/pizarra.jpg" class="img_mercadillo2"></div>
+    </div>
+    <section class="collage1">
         <!--SECCION DE IMAGENES -->
-        <img src="imagenes/image1.jpeg"  class="box">
-        <img src="imagenes/image2.jpeg"  class="box">
-        <img src="imagenes/image3.jpeg"  class="box">
-        <img src="imagenes/image4.jpeg"  class="box">
-        <img src="imagenes/image5.jpeg"  class="box">
-        <img src="imagenes/image6.jpeg"  class="box">
-        <img src="imagenes/image7.jpeg"  class="box">
-        <img src="imagenes/image8.jpeg"  class="box">
-        <img src="imagenes/image9.jpeg"  class="box">
+        <img src="imagenes/image1.jpeg" class="box">
+        <img src="imagenes/image2.jpeg" class="box">
+        <img src="imagenes/image3.jpeg" class="box">
+        <img src="imagenes/image4.jpeg" class="box">
+        <img src="imagenes/image5.jpeg" class="box">
+        <img src="imagenes/image6.jpeg" class="box">
+        <img src="imagenes/image7.jpeg" class="box">
+        <img src="imagenes/image8.jpeg" class="box">
+        <img src="imagenes/image9.jpeg" class="box">
         <img src="imagenes/image10.jpeg" class="box">
         <form>
             <input type="button" value="VER MAS" />
         </form>
-    </seccion>
-    <footer class="grey1">
-        <h3 class="biz">CONTACTO</h3>
-        <!--CONTACTO-->
-        <ul class="inf">
-            <li class="inf"><img src="imagenes/icubi.png" width="15"> Amadeo Bertini 274, 2594 Leones, Córdoba,
-                Argentina <a href="https://goo.gl/maps/JTdxn6tdqkytk2rJ9" target="_blanck"> <img
-                        src="imagenes/LogoGoogleMaps.png" width="20" title=" Ir a Google Maps">
-            <li class="inf"> <img src="imagenes/icface.png" width="10"><a
-                    href="https://www.facebook.com/search/top?q=el%20mercado%20gourmet" target="_blanck"> El Mercado
-                    Gourmet</a> </li>
-            <li class="inf"> <img src="imagenes/icinsta.png" width="15"><a
-                    href="https://www.instagram.com/elmercado.gourmet/" target="_blanck"> @elmercado.gourmet</a></li>
-            <li class="inf"> <img src="imagenes/icwhat.png" width="15"> 03472-15523911</li>
-        </ul> <!-- Inicio pie de página -->
+    </section>
+    <section class="grey1">
+        <footer id="contact">
+            <div class="titulo_footer">
+                <h3 class="biz_contact">CONTACTO</h3>
+            </div>
+            <div class="redes">
+                <ul class="inf">
+                    <li class="inf"> <img  src="imagenes/icubi.jpg" class="icon"></i> <span> Bertini 274, 2594 Leones, Córdoba.Argentina</span><a href="https://goo.gl/maps/JTdxn6tdqkytk2rJ9" target="_blanck"> <img src="imagenes/LogoGoogleMaps.png" width="20" title=" Ir a Google Maps" class="ir_a_maps"> 
+                    </li>
+                    <li class="inf"> <img  src="imagenes/icface.jpg" class="iconfc"></i><a href=https://www.facebook.com/search/top?q=el%20mercado%20gourmet target="_blanck"> <span> El Mercado Gourmet</span></a>
+                    </li>
+                    <li class="inf">  <img  src="imagenes/icinsta.jpg" class="icon"><a href=https://www.instagram.com/elmercado.gourmet/ target="_blanck"> <span>@elmercado.gourmet</span></a>
+                    </li>
+                    <li class="inf"> <img  src="imagenes/icwhat.jpg" class="icon"><span> 03472-15523911</span></li>
+                </ul>
+            </div>
         <p class="copy">Copyright 2022, El Mercado Gourmet</p>
     </footer> <!-- Fin pie de página -->
+</section>
 </body>
 
 </html>
