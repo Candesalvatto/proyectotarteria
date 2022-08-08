@@ -3,7 +3,7 @@
 	margin: 0;
 	box-sizing: border-box;
 }
-@media (min-device-width: 1025px){
+
 p {
 	color: black;
 	font-family: 'Signika', sans-serif;
@@ -308,16 +308,16 @@ footer .check {
 #check_estrella {display: none;}
 #check_estrella:checked  .check_estrella {display: block;}
 textarea {
-	width: 200px;
-	height: 100px;
+	width: 300px;
+	height: 150px;
 	display: flex;
 	margin: auto;
 	}
 	.boton_form {margin: auto;}
-}
+
 
 	/*RESPONSIVE*/
-@media (max-device-width: 480px) {
+@media (max-width: 480px) {
 
 .media {display: none;}
 .sentite_bien {width: 100%;
