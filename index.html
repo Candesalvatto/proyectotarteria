@@ -131,38 +131,29 @@
             <div class="titulo_footer">
                 <h3 class="biz_contact">CONTACTO</h3>
             </div>
-            <div class="redes">
-                <ul class="inf">
-                    <li><a href="https://goo.gl/maps/JTdxn6tdqkytk2rJ9" target="_blanck" ><i class='bx bx-map'></i></a> <span> Bertini 274, 2594 Leones, Córdoba.Argentina</span><a href="https://goo.gl/maps/JTdxn6tdqkytk2rJ9" target="_blanck"> <img src="imagenes/LogoGoogleMaps.png" width="20" title=" Ir a Google Maps" class="ir_a_maps"> </li>
-                    <li> <a href="https://www.facebook.com/LaTarteriagourmet" target="_blanck"> <i class='bx bxl-facebook-circle' ></i> <span> Tarteria gourmet</span></a></li>
-                    <li> <a href=" https://www.instagram.com/latarteria.gourmet/" target="_blanck"> <i class='bx bxl-instagram'></i> <span>@latarteria.gourmet</span></a></li>
-                    <li> <i class='bx bxl-whatsapp' ></i></i><span> 03472-15523911</span></li>
-                </ul>
+            <div class="d-flex flex-column">
+                    <div ><a href="https://goo.gl/maps/JTdxn6tdqkytk2rJ9" target="_blanck" ><i class='bx bx-map'></i></a> <span class="info_contacto"> Bertini 274, 2594 Leones, Córdoba.Argentina</span><a href="https://goo.gl/maps/JTdxn6tdqkytk2rJ9" target="_blanck"> <img src="imagenes/LogoGoogleMaps.png" width="20" title=" Ir a Google Maps" class="ir_a_maps"> </div>
+                    <div ><a href="https://www.facebook.com/LaTarteriagourmet" target="_blanck"> <i class='bx bxl-facebook-circle' ></i> <span class="info_contacto"> Tarteria gourmet</span></a></div>
+                    <div ><a href=" https://www.instagram.com/latarteria.gourmet/" target="_blanck"> <i class='bx bxl-instagram'></i> <span class="info_contacto">@latarteria.gourmet</span></a></div>
+                    <div ><i class='bx bxl-whatsapp' ></i></i><span class="info_contacto"> 03472-15523911</span></div>
             </div>
             <div class="formulario">
-                <form>
+                <form class="form">
                     <p> ¿Probaste nuestros productos? Tu opinión nos ayuda.</p>
                     <div class="contenedor_estrella">
-                    <label class="check_estrella" for="check_estrella"><img src="imagenes/iconoestrella.png" class="icono_estrella"></label>
-                    <input id="check_estrella" type="checkbox" name="#" value="#">
-                    <label class="check_estrella" for="check_estrella"><img src="imagenes/iconoestrella.png" class="icono_estrella"></label>
-                    <input id="check_estrella" type="checkbox" name="#" value="#">
-                    <label class="check_estrella" for="check_estrella"><img src="imagenes/iconoestrella.png" class="icono_estrella"></label>
-                    <input id="check_estrella" type="checkbox" name="#" value="#">
-                    <label class="check_estrella" for="check_estrella"><img src="imagenes/iconoestrella.png" class="icono_estrella"></label>
-                    <input id="check_estrella" type="checkbox" name="#" value="#">
-                    <label class="check_estrella" for="check_estrella"><img src="imagenes/iconoestrella.png" class="icono_estrella"></label>
-                    </div>
-                    <input id="check_estrella" type="checkbox" name="#" value="#">
-                    <div class="check">
-                        <p><input type="checkbox" name="#" value="#"></p>
-                        <p><input type="checkbox" name="#" value="#"></p>
-                        <p><input type="checkbox" name="#" value="#"></p>
-                        <p><input type="checkbox" name="#" value="#"></p>
-                        <p><input type="checkbox" name="#" value="#"></p>
+                        <input type="radio" id="calificacion_1" name="calificacion" value="1" />
+                        <label for="calificacion_1" class="check_estrella check_1"></label>
+                        <input type="radio" id="calificacion_2" name="calificacion" value="2" />
+                        <label for="calificacion_2" class="check_estrella check_2"></label>
+                        <input type="radio" id="calificacion_3" name="calificacion" value="3" />
+                        <label for="calificacion_3" class="check_estrella check_3"></label>
+                        <input type="radio" id="calificacion_4" name="calificacion" value="4" />
+                        <label for="calificacion_4" class="check_estrella check_4"></label>
+                        <input type="radio" id="calificacion_5" name="calificacion" value="5" />
+                        <label for="calificacion_5" class="check_estrella check_5"></label>
                     </div>
                     <textarea placeholder="Deja aqui tu comentario.."></textarea>
-                    <input type="submit" class="boton_form"/>
+                    <button type="button" class="btn btn-outline-dark m-auto">ENVIAR</button>
                 </form> <!-- Inicio pie de página -->
             </div>
             <p class="copy">Copyright 2022, La Tartería Gourmet</p>

@@ -23,7 +23,6 @@ p {
 .media {width: 100%;}
 .sentite_bien {display: none;}
 
-
 .contenedor {
 	display: flex;
 	justify-content: space-between;
@@ -43,8 +42,6 @@ p {
 	flex-direction: row;
 	}
 
-
-
 .cabecera li {
 	justify-content: space-between;
 	list-style: none;
@@ -53,8 +50,8 @@ p {
 }
 
 .cabecera a:hover {
-	color: #EFA600;
-	text-shadow: 0px 0px 5px, 0px 0px 7px, 0px 0px 10px;
+	color: white;
+	text-shadow: 0px 0px 5px white, 0px 0px 7px white, 0px 0px 10px white;
 }
 
 
@@ -117,8 +114,7 @@ overflow: hidden;}
 	margin-bottom: 100px;
 	width: 100%;
 	white-space: nowrap
-	
-}
+	}
 
 .biz_contact {
 	font-family: 'Sigmar One', cursiva;
@@ -180,8 +176,6 @@ width: 90%;}
 	width: 80%;
 }
 
-
-
 .divi2 {
 	display: flex;
 	margin-bottom: 30px;
@@ -205,8 +199,6 @@ margin-top: auto;
 margin-bottom: auto;
 margin-left: 5%;
 }
-
-
 
 /*contacto*/
 #contact {
@@ -238,8 +230,9 @@ margin-left: 5%;
 	flex-direction: row;
 }
 
-.redes ul li {
-	font-family: 'BIZ UDGothic', sans-serif;
+.info_contacto {
+	font-family: 'Signika', sans-serif;
+	font-size: 15px;
 	margin-top: 15px;
 	margin-left: 30px;
 	display: flex;
@@ -247,16 +240,10 @@ margin-left: 5%;
 	justify-content: flex-start;
 }
 
-.inf li {
-	justify-content: space-between;
-	flex-direction: row;
-	column-gap: 5px;
-}
 
 .inf a {
 	text-decoration: none;
 	color: black;
-
 }
 
 .inf a:hover {
@@ -300,20 +287,54 @@ footer .check {
 	margin-top: 10%;
 }
 
-.icono_estrella {width: 20px;}
-.check {
-	display: inline-block;
-	margin: auto;
-}
-#check_estrella {display: none;}
-#check_estrella:checked  .check_estrella {display: block;}
-textarea {
-	width: 300px;
-	height: 150px;
+.contenedor_estrella {
 	display: flex;
 	margin: auto;
-	}
-	.boton_form {margin: auto;}
+}
+
+.check_1 {
+	order: 5
+}
+
+.check_2 {
+	order: 4
+}
+
+.check_3 {
+	order: 3
+}
+
+.check_4 {
+	order: 2
+}
+
+.check_5 {
+	order: 1
+}
+
+.check_estrella {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: url('../imagenes/iconoestrella.png') left center no-repeat;
+	background-size: 40px
+}
+
+.contenedor_estrella input {
+	display: none
+}
+
+.contenedor_estrella input:checked ~ label {
+	background-image: url('../imagenes/iconoestrella_lleno.png')
+}
+
+textarea {width: 300px;
+height: 150px;
+margin: auto;
+margin-top: 15px;
+margin-bottom: 15px;}
+
+.boton_form {margin: auto;}
 
 
 	/*RESPONSIVE*/
@@ -323,7 +344,6 @@ textarea {
 .sentite_bien {width: 100%;
 display: block;}
 .logotarte {display: none;}
-.contenedor {display: flex; background: url(../imagenes/sentitebien.jpg);}
 .cabecera {display: none;
 position: absolute;
 top: 100%;
@@ -346,7 +366,6 @@ margin-right: 2%;}
 justify-content: right;}
 
 #products {
-
 	grid-template-rows: 1fr, 1fr, 1fr, 1fr;
 	grid-template-columns: 1fr, 1fr, 1fr, 1fr;
 	grid-template-areas: ". titulo titulo ."
@@ -356,66 +375,21 @@ justify-content: right;}
 		"viernes viernes viernes viernes";
 	margin-top: 30px;
 	margin-bottom: 30px;
-
-
-}
-
-.titulo_products {
-	grid-area: titulo;
-	text-align: center;
 }
 
 .product1 {
-	grid-area: tartas;
 	width: 100%;
-}
-
-.product1 img,
-.product2 img,
-.product3 img,
-.product4 img {
-	width: 100%;
-}
-
-.product2 {
-	grid-area: ensaladas;
-}
-
-.product3 {
-	grid-area: pizza;
-}
-
-.product4 {
-	grid-area: viernes;
 }
 
 
 .bizt {font-size: 1.2em;}
 .bizt img {margin-bottom: 8%;}
-.bizt button {	margin-top: 5%;
-	background-color: transparent;
-	color: #EFA600 ;
-	width: 40%;
-	height: 40px;
-	border: solid #EFA600;
-	font-size: 70%;
-	transition-property: background-color;
-	transition-delay: 0s;}
-
-	button:hover {background-color: #EFA600;
-	color: white;
-	box-shadow: 0px 0px 10px #EFA600, 0px 0px 20px #EFA600,0px 0px 40px #EFA600;
-	}
 .biz,
 .biz_contact {
 	font-family: 'Sigmar One', cursiva;
 	font-size: 20px;
-	display: flex;
-	justify-content: center;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	width: 100%;
-	white-space: nowrap;	
 }
 #sobre_nosotros {width: 80%;
 justify-content: center;
@@ -427,9 +401,9 @@ margin: auto; }
 	}
 
 .divi p {
-	font-size: 15px;
-	text-align: justify;
-	width: 100%;
+font-size: 15px;
+text-align: justify;
+width: 100%;
 margin-top:  10%;
 margin-bottom: auto;
 order: 1;
@@ -437,16 +411,11 @@ height: 80px;
 overflow: scroll	
 }
 
-.img_chef1, 
-.img_chef2, 
-.img_chef3 {width: 100%;}
 
 .divi2 {
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 30px;}
-
-
 
 
 .divi2 p {
@@ -480,12 +449,7 @@ align-items: center;
 .inf li {color: rebeccapurple;}
 .copy {font-size: 0.5em;}
 
-
-
 }
-
-
-
 
 
 /*menu del mercado*/
@@ -516,13 +480,6 @@ align-items: center;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
 	font-weight: 100;
-	text-align: justify;
-	margin-left: 5%;
-	margin-right: 5%;
-	width: 100%;
-	display: flex;
-	text-align: center;
-	justify-content: center;
 }
 
 .logo_completo {
@@ -543,10 +500,7 @@ margin-right: auto;}
 .img_valeygusti {width: 100%;
 margin-top: 80px;
 margin-bottom: 50px;
-
-
 }
-
 
 
 /*CONTENIDO MERCADO*/
@@ -579,24 +533,10 @@ margin-bottom: 50px;
 	text-decoration: none;
 
 }
+.img_mercadillo,
+.img_mercadillo2 {width: 100%;}
 
 
-.mercadillo {
-	display:flex;
-	justify-content: center;
-	flex-direction: row;
-	text-align: center;
-width: 100%;
-}
-
-
-.img_mercadillo {width: 60%;
-margin-left: 0;
-margin-right: 0;
-margin-top: auto;
-margin-bottom: autoz;}
-.img_mercadillo2 {width: 100%;
-margin: auto;}
 
 .collage1 {
 	display: grid;
@@ -621,6 +561,7 @@ margin: auto;}
 .grey1 {
 	background-color: #F5F5E9;
 }
+.copy {font-size: 12px;}
 
 
 	/*RESPONSIVE MERCADO*/
@@ -636,7 +577,6 @@ margin: auto;}
 			position: absolute;
 	top: 0%;
 	right: 0%;}
-	.logo_para_volver:hover {transform: scale(1.5, 1.5);}
 	#menu {display: flex;
 		position: static;
 		top: 0;
@@ -657,17 +597,11 @@ justify-content: right;}
 		
 		
 		
-		#el_mercado {width: 90%;
-		margin-left: auto;
-	margin-right: auto;}
-		.img_valeygusti {width: 100%;}
+.img_valeygusti {width: 100%;}
 
-		.parrafo_mercado2 {
+.parrafo_mercado2 {
 			color: #FFFFF2;
 			font-size: 1em;
-			font-family: 'Quicksand', sans-serif;
-			display: flex;
-			justify-content: center;
 			margin-bottom: 10%;
 		}
 
@@ -682,33 +616,27 @@ justify-content: right;}
 			text-align: justify;
 		}
 
-		.mercadillo {
-			display: flex;
-			flex-direction: column;
-			width: 100%;
-		}
-		.parrafo_mercado1 {
-			color: #FFFFF2;
-			font-family: 'Montserrat', sans-serif;
-			font-size: 1em;
-			font-weight: 100;
-			text-align: justify;
-			margin-top: 10%;
-			margin-bottom: 10%;
-			height: 150px;
-			overflow: scroll;
-			width: 90%;
-		}
-		.img_mercadillo {width: 100%;
-		}
-		.img_mercadillo2 {width: 100%;}
 
-		.collage1 {
-			display: none;}
-
-			
-			
+.parrafo_mercado1 {
+		color: #FFFFF2;
+		font-family: 'Quicksand', sans-serif;
+		font-size: 1em;
+		font-weight: 100;
+		text-align: justify;
+		margin-top: 10%;
+		margin-bottom: 10%;
+		height: 150px;
+		overflow: scroll;
+		width: 90%;
 		}
+.img_mercadillo {width: 100%;
+		}
+.img_mercadillo2 {width: 100%;}
+
+.collage1 {
+	display: none;}
+
+}
 			
 	
 
@@ -756,13 +684,6 @@ justify-content: right;}
 	padding-top: 15px;
 }
 
-.copy_info {
-	font-size: 12px;
-	display: flex;
-	justify-content: center;
-	padding-top: 20%;
-}
-
 .contenedor_info {
 	display: flex;
 	justify-content: space-between;
@@ -775,7 +696,7 @@ justify-content: right;}
 }
 
 .logotarte2 {
-	width: 40%;
+	width: 30%;
 	margin-left: 10px}
 
 .cabecera_info {
@@ -797,20 +718,19 @@ justify-content: right;}
 }
 
 .cabecera_info a:hover {
-	color: #A37710;
+	color: white;
+	text-shadow: 0px 0px 5px white, 0px 0px 7px white, 0px 0px 10px white;
 }
 
 .link_logo {margin-left: 300px;
 width: 30%;}
+.link_logo:hover {transform: scale(1.1,1.1)}
+.copy {font-size: 12px;}
 
-
-	
 
 	/*RESPONSIVE INFO*/
 	@media (max-width: 480px) {
-		.infoutil {
-			background-color: #EFA600;
-		}
+		.logotarte2 {width: 20%;}
 
 		.cabecera_info ul li {
 			display: none;
@@ -848,13 +768,8 @@ width: 30%;}
 	}
 
 @media (min-width: 481px) and (max-width: 768px) {
-	.infoutil {
-		background-color: #EFA600;
-	}
 
 	.titulo_info {
-		display: flex;
-		justify-content: center;
 		font-size: 50px;
 		padding-top: 90px;
 		padding-bottom: 30px;
@@ -871,19 +786,13 @@ width: 30%;}
 	}
 
 	.titulo_tarte_tips {
-		display: flex;
-		justify-content: flex-start;
 		font-size: 20px;
 		padding-top: 20px;
 	}
 
 	.escrito_tips {
 		font-size: 10px;
-		display: flex;
 		justify-content: flex-start;
 	}
 
-	.copy_info {
-		font-size: 6px;
-	}
 }
