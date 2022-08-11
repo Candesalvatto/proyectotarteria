@@ -556,11 +556,18 @@ margin-bottom: 50px;
 	display: flex;
 	justify-content: center;}
 
-	
+	#contact {
+		grid-template-areas: "titulo titulo titulo titulo"
+			"redes redes redes redes"
+			"copi copi copi copi";
+			width: 100%;
+	}
+		
 .contenedor_contacto a {font-size: 70px;
 		padding: 40px;
 		text-decoration: none;
 		color: black;
+		margin-top: 100px;
 		}
 .contenedor_contacto a:hover {transform: scale(1.3);}
 
