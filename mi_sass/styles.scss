@@ -29,7 +29,9 @@ p {
 
 .media {width: 100%;}
 
-.sentite_bien {display: none;}
+.contenedor_slider {
+	display: none;
+  }
 
 .contenedor {
 	display: flex;
@@ -88,6 +90,7 @@ p {
 
 .product1 {
 	grid-area: tartas;
+    position: relative;
     img {
         @include productos
     }
@@ -317,8 +320,9 @@ margin-bottom: 15px;}
 {
 
     .media {display: none;}
-    .sentite_bien {width: 100%;
-    display: block;}
+    .contenedor_slider {
+		display: block;
+	  }
     .logotarte {display: none;}
     .cabecera {display: none;
         position: absolute;
@@ -354,9 +358,16 @@ margin-bottom: 15px;}
                 "viernes viernes viernes viernes";
             margin-top: 30px;
             margin-bottom: 30px;
+            
         }
+
+
+
     .bizt {font-size: 1.2em;
-        img {margin-bottom: 8%;}
+        img {margin-bottom: 8%;
+        width: 100%;
+    height: 200px;
+object-fit: cover;}
     }   
     .biz,
     .biz_contact {
@@ -377,8 +388,8 @@ margin-bottom: 15px;}
                 width: 100%;
                 margin-top:  10%;
                 order: 1;
-                height: 80px;
-                overflow: scroll	
+                height: 100%;
+	
                 }
             }
     .divi2 {
@@ -389,8 +400,8 @@ margin-bottom: 15px;}
                 margin-top: 10%;
                 order: 1;
                 height: 80px;
-                overflow: scroll;
                 width: 100%;
+                height: 100%;
                 margin-left: auto;
                 margin-right: auto;
             }

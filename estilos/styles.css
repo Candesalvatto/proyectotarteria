@@ -27,7 +27,7 @@ p {
   width: 100%;
 }
 
-.sentite_bien {
+.contenedor_slider {
   display: none;
 }
 
@@ -80,6 +80,7 @@ p {
 
 .product1 {
   grid-area: tartas;
+  position: relative;
 }
 .product1 img {
   width: 100%;
@@ -336,8 +337,7 @@ textarea {
   .media {
     display: none;
   }
-  .sentite_bien {
-    width: 100%;
+  .contenedor_slider {
     display: block;
   }
   .logotarte {
@@ -387,6 +387,9 @@ textarea {
   }
   .bizt img {
     margin-bottom: 8%;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
   }
   .biz,
 .biz_contact {
@@ -409,8 +412,7 @@ textarea {
     width: 100%;
     margin-top: 10%;
     order: 1;
-    height: 80px;
-    overflow: scroll;
+    height: 100%;
   }
   .divi2 {
     flex-direction: column;
@@ -421,8 +423,8 @@ textarea {
     margin-top: 10%;
     order: 1;
     height: 80px;
-    overflow: scroll;
     width: 100%;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
   }
