@@ -71,8 +71,9 @@ p {
 	grid-template-areas: ". titulo titulo ."
 		"tartas ensaladas pizza viernes";
 	gap: 20px;
-	margin-left: 80px;
-	margin-right: 80px;
+	margin-left: auto;
+	margin-right: auto;
+    width: 70%;
 }
 
 .titulo_products {
@@ -84,19 +85,23 @@ p {
     width: 100%;
     transition-delay: 0.2s;
     transition: ease-in;
-    object-fit: cover;
+    object-fit:cover;
     
 }
 
 .product1 {
 	grid-area: tartas;
     position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
     img {
         @include productos
     }
 }
 .product2 {
 	grid-area: ensaladas;
+    margin-left: 20px;
+    margin-right: 20px;
     img {
         @include productos
     }
@@ -104,6 +109,8 @@ p {
 
 .product3 {
 	grid-area: pizza;
+    margin-left: 20px;
+    margin-right: 20px;
     img {
         @include productos
     }
@@ -111,6 +118,8 @@ p {
 
 .product4 {
 	grid-area: viernes;
+    margin-left: 20px;
+    margin-right: 20px;
     img {
         @include productos
     }
@@ -118,11 +127,11 @@ p {
 .product1 img:hover,
 .product2 img:hover,
 .product3 img:hover,
-.product4 img:hover {transform: scale(1.3, 1.3); }
+.product4 img:hover {transform: scale(1.1, 1.1); }
 
 .contenedor_img {width: 100%;
     height: 100%;
-    overflow: hidden;}
+    }
 
 .menu {
     color: white;
