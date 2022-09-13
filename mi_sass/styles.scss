@@ -1162,7 +1162,8 @@ margin-right: auto;
 }
 .parrafo_de_viernes {width: 60%;
 margin-left: auto;
-margin-right: auto;margin-top: 10%;}
+margin-right: auto;
+margin-top: 10%;}
 h1 {font-family: 'Sigmar One', cursiva;
 font-size: 3em;
 text-align: center;
@@ -1174,4 +1175,35 @@ h2 {font-family: 'Signika', sans-serif;
 font-size: 2.3em;
 margin-bottom: 5%;}
 }
+
+/*RESPONSIVE*/
+@media (max-width: 480px) 
+{ 
+    .nuestras_especialidades {background: url(../imagenes/bannerliso.jpg) no-repeat fixed;
+    object-fit: cover;
+width: 100%;}
+
+        .tabla_precios {width: 80%;
+        margin-left: auto;
+    margin-right: auto;
+margin-top: 15%;}
+    td {font-size: 0.8em;}
+    h1 {font-size: 1.2em;
+        font-family: 'Sigmar One', cursiva;
+        text-align: center;
+        margin-top: 20%;
+    }
+    h2 {font-size:1em ;
+    margin-top: 20%;
+margin-bottom: 10%;}
+    .parrafo_de_viernes {width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    p{font-size: 0.8em;}}
+    .copy {font-size: 0.5em;}
+    .logotarte {width: 30%;}
+.contenedor {background-color: rgba(0,0,0,0.2);}
+.img_boton_menu {width: 20%;}
+
+
 
