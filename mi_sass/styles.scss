@@ -17,12 +17,14 @@ p {
 /*LA TARTERIA*/
 
 .logotarte {
-	width: 10%;
+	width: 100%;
 	margin-left: 10px;
 }
+.logotarteria {width: 10%;
+    margin-left: 10px;}
 
 .link_logo_index {
-	width: 18%;
+	width: 150px;
 
     &:hover {transform: scale(1.1,1.1);}
 }
@@ -37,11 +39,13 @@ p {
 	display: flex;
 	justify-content: space-between;
 	z-index: 1;
-	position: absolute;
+	position: fixed;
 	top: 0%;
 	left: 0%;
 	width: 100%;
-	background: url(../imagenes/video.mp4)}
+	background: url(../imagenes/video.mp4);
+    background-color: rgba(0,0,0,0.2)
+}
 
 .boton_menu,
 #boton_menu {display: none;}
@@ -55,8 +59,6 @@ p {
     li {
         justify-content: space-between;
         list-style: none;
-        padding: auto;
-        margin-top: 10px;
         }
     a:hover {
         color: white;
@@ -73,7 +75,7 @@ p {
 	gap: 20px;
 	margin-left: auto;
 	margin-right: auto;
-    width: 70%;
+    width: 80%;
 }
 
 .titulo_products {
@@ -85,17 +87,17 @@ p {
     width: 100%;
     transition-delay: 0.2s;
     transition: ease-in;
-    object-fit:cover;
+    object-fit:contain;
     
 }
 
 .product1 {
 	grid-area: tartas;
-    position: relative;
     margin-left: 20px;
     margin-right: 20px;
     img {
-        @include productos
+        @include productos;
+        margin-bottom: 28%;
     }
 }
 .product2 {
@@ -103,7 +105,8 @@ p {
     margin-left: 20px;
     margin-right: 20px;
     img {
-        @include productos
+        @include productos;
+        margin-bottom: 23%;
     }
 }
 
@@ -112,7 +115,8 @@ p {
     margin-left: 20px;
     margin-right: 20px;
     img {
-        @include productos
+        @include productos;
+        margin-bottom: 15%;
     }
 }
 
@@ -121,7 +125,8 @@ p {
     margin-left: 20px;
     margin-right: 20px;
     img {
-        @include productos
+        @include productos;
+        margin-bottom: 15%;
     }
 }
 .product1 img:hover,
@@ -159,6 +164,9 @@ p {
     align-items: center;
     display: flex;
     flex-direction: column;
+    font-size: 1.3em;
+    color: $color_tarteria;
+    
 
     button {	margin-top: 5%;
         background-color: transparent;
@@ -180,6 +188,7 @@ p {
     margin-bottom: 30px;
     margin: auto;
     width: 90%;
+    opacity: 1;
     p {
         font-size: 23px;
         text-align: justify;
@@ -215,7 +224,7 @@ p {
 	display: flex;
 	justify-content: center;
 	margin-top: 30px;
-	margin-bottom: 70px;
+	margin-bottom: 40px;
 }
 
 
@@ -239,7 +248,7 @@ p {
 	grid-area: formulario;
 	display: flex;
 	justify-content: center;
-    margin-top: 20%;
+    margin-top: 10%;
 	form {
         display: flex;
         flex-direction: row;
@@ -332,7 +341,9 @@ margin-bottom: 15px;}
     .contenedor_slider {
 		display: block;
 	  }
-    .logotarte {display: none;}
+    .logotarteria {display: none;}
+    .link_logo_index {
+        width: 25%;}
     .cabecera {display: none;
         position: absolute;
         top: 100%;
@@ -344,7 +355,8 @@ margin-bottom: 15px;}
     .menu {font-size: 0.8em;}
 
     .img_boton_menu {width: 5%;}
-    .contenedor {justify-content: right;}
+    .contenedor {justify-content: right;
+    background-color: transparent;}
     .boton_menu {display: block;
             text-align: right;
             margin-top: 2%;
@@ -354,6 +366,7 @@ margin-bottom: 15px;}
             &:checked {
                 & + .cabecera {
                     display: block;
+                    background-color: rgba(0,0,0,0.2);
                 }
             }
         }
@@ -376,12 +389,12 @@ margin-bottom: 15px;}
         img {margin-bottom: 8%;
         width: 100%;
     height: 200px;
-object-fit: cover;}
+}
     }   
     .biz,
     .biz_contact {
 	font-family: 'Sigmar One', cursiva;
-	font-size: 20px;
+	font-size: 1.2em;
 	margin-top: 20px;
 	margin-bottom: 20px;
     }
@@ -427,14 +440,18 @@ object-fit: cover;}
     { a {font-size: 30px;
 	}  
 } 
+.copy {margin-top: 20%;
+
+}
 }
 
 @media (min-width: 481px) and (max-width: 870px)
 {
     .media {display: none;}
-	.sentite_bien {width: 100%;
-	display: block;}
-	.logotarte {display: none;}
+    .contenedor_slider {
+		display: block;
+	  }
+	.logotarteria {display: none;}
     .cabecera {display: none;
         position: absolute;
         top: 100%;
@@ -455,13 +472,15 @@ object-fit: cover;}
             &:checked {
                 & + .cabecera {
                     display: block;
+                    background-color: rgba(0,0,0,0.2)
                 }
             }
         }
-    .contenedor {justify-content: right;}
+    .contenedor {justify-content: right;
+    background-color: transparent;}
 	.biz,
     .biz_contact {
-		font-size: 30px;
+		font-size: 2em;
 	}
     .bizt {
         font-size: 15px;
@@ -469,6 +488,13 @@ object-fit: cover;}
             height: 40%;
             }
         }
+        #products {width: 80%;
+            grid-template-rows: 1fr, 1fr, 1fr;
+            grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+            grid-template-areas: ". titulo titulo ."
+                "tartas tartas ensaladas ensaladas"
+                "pizza pizza viernes viernes" ;
+        .bizt{font-size: 1.1em;}}
     #sobre_nosotros {width: 80%;
 			justify-content: center;
 			margin: auto; }
@@ -476,30 +502,29 @@ object-fit: cover;}
 			flex-direction: column;
 			margin-bottom: 30px;
             p {
-                font-size: 23px;
+                font-size: 1.1em;
                 text-align: justify;
                 width: 100%;
                 margin-top:  10%;
                 margin-bottom: auto;
                 order: 1;
-                height: 200px;
-                overflow: scroll	
+                height: auto;
                 }
             }
     .divi2 {
 			flex-direction: column;
 			margin-bottom: 30px;
             p {
-				font-size: 23px;
+				font-size: 1.1em;
 				text-align: justify;
 				margin-top: 10%;
 				margin-bottom: auto;
 				order: 1;
-				height: 200px;
-				overflow: scroll;
+				height: auto;
 				width: 100%;
 				margin-left: auto;
 				margin-right: auto;
+
 			}
         }
     .formulario {display: none;}
@@ -513,6 +538,9 @@ object-fit: cover;}
         a {font-size: 50px;
             margin-top: 0%;}
 
+    }
+    .copy {margin-top: 20%;
+
     }	
 }
 
@@ -520,16 +548,25 @@ object-fit: cover;}
 
     #boton_menu {display: none;}
 	.img_boton_menu {display: none;}
-	
+    .media {display: none;}
+    .contenedor_slider {
+		display: block;
+	  }
+      .biz,
+      .biz_contact {
+          font-size: 2em;
+      }
+      #products {width: 90%;}
 	.bizt {
-		font-size: 18px;
+		font-size: 0.9em;
 		button {
 			height: 50%;
 			}
         }
     .divi p,
     .divi2 p {font-size: 1em;
-        width: 100%;}
+        width: 100%;
+    height: auto;}
         .form
         {
             p {font-size: 15px;}
@@ -547,14 +584,22 @@ object-fit: cover;}
     height: 10%;
         span {font-size: 0.8em;}
         }
-    }    
+    }  
+    .copy {margin-top: 20%;
+
+    }
+    .boton_enviar {font-size: 100%;
+    padding: 0;
+margin: 0;}
+
 }
 
 
 /*EL MERCADO*/
 
 .body_mercado {
-	background-color: #141414;
+	background: url(../imagenes/bannermercado.jpg) no-repeat fixed;
+    background-size: 100%;
 }
 .logo_para_volver {width: 8%;
 	margin-right: 8px;
@@ -643,15 +688,18 @@ object-fit: cover;}
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: auto;
 	padding: 10px;
-
-	margin-left: 170px;
-	margin-right: 170px;
+margin-left: 170px;
+margin-right: 170px;
 	margin-top: 200px;
 }
 
 .box {
 	padding-bottom: 10px;
 	width: 100%;
+    &:hover {transform: scale(1.3, 1.3,);
+    transition-delay: 4s;
+    transition:ease-in-out;
+    overflow: visible;}
 }
 .biz_contact_mercado {color: black;
 	font-size: 50px;
@@ -853,9 +901,15 @@ margin-top: 5%;}
 /*SECCION INFO*/
 
 .infoutil {
-	background-color: $color_tarteria;
+	background: url(../imagenes/bannerliso.jpg) no-repeat fixed;
+background-size: 100% 100%;
+
 }
 
+.logotarte {
+	width: 20%;
+	margin-left: 10px;
+}
 .titulo_info {
 	display: flex;
 	justify-content: center;
@@ -1089,4 +1143,37 @@ margin-left: 85%;}
 		
 	}
 	
+
+    /* NUESTRAS ESPECIALIDADES */
+    .nuestras_especialidades {background: url(../imagenes/bannercontartitas.jpg) no-repeat fixed;
+    margin-top: 10%;
+    background-size: 100% 100%;
+    object-fit: cover;
 }
+
+.logotarte {
+	width: 20%;
+	margin-left: 10px;
+}
+
+    .tabla_precios {width: 70%;
+margin-left: auto;
+margin-right: auto;
+}
+.parrafo_de_viernes {width: 60%;
+margin-left: auto;
+margin-right: auto;margin-top: 10%;}
+h1 {font-family: 'Sigmar One', cursiva;
+font-size: 3em;
+text-align: center;
+margin-bottom: 10%;}
+th {font-family: 'Signika', sans-serif;
+font-size: 1.5em;}
+td {font-family: 'Signika', sans-serif;}
+h2 {font-family: 'Signika', sans-serif;
+font-size: 2.3em;
+margin-bottom: 5%;}
+}
+
+@media (max-width: 480px) {
+    

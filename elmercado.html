@@ -22,6 +22,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!--links css-->
     <link rel="stylesheet" href="estilos/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="body_mercado">
@@ -35,10 +36,13 @@
     <div><img src="imagenes/Logocompletopara fondonegro.png" alt="Logo" title="Logo"class="logo_completo"></div>
     <div><img src="imagenes/collage1.jpg" class="collage" alt="collage" title="El Mercado"></div>
     <div id="el_mercado">
-    <div class="valeygusti"><img src="imagenes/valegusti.jpg" class="img_valeygusti" alt="imagen vale y gusti" title="Vale y Gusti" ></div>
-    <h1> <span class="biz2 parrafo_mercado2"> SOMOS VALE Y GUSTI </span></h1>
+    <div class="valeygusti" data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom" data-aos-duration="3000"><img src="imagenes/valegusti.jpg" class="img_valeygusti" alt="imagen vale y gusti" title="Vale y Gusti" ></div>
+    <h1> <span class="biz2 parrafo_mercado2" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="3000"> SOMOS VALE Y GUSTI </span></h1>
     <!--PRESENTACION -->
-    <h2 class="parrafo_h2">
+    <h2 class="parrafo_h2" data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom" data-aos-duration="3000">
         <p class="parrafo_mercado">Un dúo que soñó con crear un espacio en el que principalmente te sientas cómodo.
             Un lugar al que te de gusto entrar, con música agradable, donde puedas desconectarte del caos de la
             cotidianeidad, al menos ese ratito que elijas estar.
@@ -53,8 +57,8 @@
     </div>
     <div class="container-fluid text-center align-items-center">
         <div class="row">
-        <div class="col-12 col-lg-2"><img src="imagenes/comerico.jpg" alt="imagen" title="El Mercado" class="img_mercadillo"></div>
-        <div class="col-12 col-lg-8"><p class="parrafo_mercado1">El Mercado es un proyecto que nació de una idea tan chiquita hace un par de años,
+        <div class="col-12 col-lg-2" data-aos="zoom-in" data-aos-duration="3000"><img src="imagenes/comerico.jpg" alt="imagen" title="El Mercado" class="img_mercadillo"></div>
+        <div class="col-12 col-lg-8"><p class="parrafo_mercado1" data-aos="zoom-in" data-aos-duration="3000">El Mercado es un proyecto que nació de una idea tan chiquita hace un par de años,
             queríamos hacer algo que llene nuestros días de gratitud, hacer algo que haga que nos explote la cabeza de
             ideas, algo en donde podamos expresar nuestra pasión: generar buenos momentos.
             Así surgió este proyecto, con buena vibra y traspasando todo tipo de barreras, siempre juntos, bancándonos.
@@ -62,10 +66,10 @@
             a poder regalarte y regalarle a los tuyos, buenos momentos, buenos sabores.
             Comer bien es una filosofía de vida.
             Y nosotros llegamos para que todo eso sea más fácil.</p></div>
-        <div class="col-12 col-lg-2"><img src="imagenes/pizarra.jpg" alt="imagen" title="El Mercado" class="img_mercadillo2"></div>
+        <div class="col-12 col-lg-2" data-aos="zoom-in" data-aos-duration="3000"><img src="imagenes/pizarra.jpg" alt="imagen" title="El Mercado" class="img_mercadillo2"></div>
         </div>
     </div>
-    <section class="collage1">
+    <section class="collage1" data-aos="zoom-in" data-aos-duration="3000">
         <!--SECCION DE IMAGENES -->
         <img src="imagenes/image1.jpeg" alt="imagen producto" title="Producto"class="box">
         <img src="imagenes/image2.jpeg" alt="imagen producto" title="Producto" class="box">
@@ -77,9 +81,6 @@
         <img src="imagenes/image8.jpeg" alt="imagen producto" title="Producto" class="box">
         <img src="imagenes/image9.jpeg" alt="imagen producto" title="Producto" class="box">
         <img src="imagenes/image10.jpeg" alt="imagen producto" title="Producto" class="box">
-        <form>
-            <input type="button" value="VER MAS" />
-        </form>
     </section>
 
 
@@ -99,6 +100,11 @@
         <p class="copy">Copyright 2022, El Mercado Gourmet</p>
     </footer> <!-- Fin pie de página -->
 </section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

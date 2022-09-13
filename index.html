@@ -23,18 +23,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!--links css-->
     <link rel="stylesheet" href="estilos/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <header class="contenedor">
         <!-- Inicio cabecera-->
-        <img src="imagenes/logon.png" alt="Logo La Tarteria" title="La tarteria" class="logotarte">
+        <img src="imagenes/logon.png" alt="Logo La Tarteria" title="La tarteria" class="logotarteria">
         <label class="boton_menu" for="boton_menu"> <img src="imagenes/iconomenu.png"  alt="Logo" title="Logo"class="img_boton_menu"> </label>
         <input id="boton_menu" type="checkbox">
         <nav class="cabecera">
             <ul>
                 <li><a href="elmercado.html" target="_self"> <img src="imagenes/loguin.png"  alt="Logo Mercado" title="Logo Mercado"type="El Mercado" class="link_logo_index"> </a></li>
-                <li><a href="#products" class="menu"> PRODUCTOS </a></li>
+                <li><a href="nuestrasespecialidades.html" class="menu"> PRODUCTOS </a></li>
                 <li><a href="#sobre_nosotros" class="menu"> SOBRE&nbspNOSOTROS </a></li>
                 <li><a href="infoutil.html" target="_self" class="menu"> INFO </a> </li>
                 <li><a href="#contact" class="menu"> CONTACTO </a></li>
@@ -93,8 +94,10 @@
     </section>
     <section id="sobre_nosotros">
         <!-- SOBRE NOSOTROS -->
-        <h3 class="biz">CONOCE AL CHEF</h3>
-        <div class="divi">
+        <h3 class="biz" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="3000">CONOCE AL CHEF</h3>
+        <div class="divi" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="3000">
             <p>Creatividad sin fin, 100 % entrega y pasión. Valeria es la creadora y chef ejecutiva de La Tartería
                 Gourmet
                 hace ya 3 años. <br />
@@ -106,8 +109,10 @@
             <div><img src="imagenes/chef.png" alt="Nuestra Chef" title="Conoce al Chef"  class="img_chef1" ></div>
             </div>
         </div>
-        <h3 class="biz"> NUESTRO EQUIPO</h3>
-        <div class="divi2">
+        <h3 class="biz" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="3000"> NUESTRO EQUIPO</h3>
+        <div class="divi2" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="3000">
             <p>Sole, Luli y Valecita son las mujeres que integran este proyecto que crece cada día. Cada una aporta las
                 mejores virtudes y manos mágicas que crean todos nuestros productos, aportan amor a cada receta y su
                 pasión
@@ -123,8 +128,10 @@
                 comienza y… ¡cuánto disfrutamos del proceso!</p>
             <div> <img src="imagenes/equipocolor.png" alt="Nuestro equipo" title="Nuestro equipo"  class="img_chef2"></div>           
         </div>
-        <h3 class="biz">CÓMO COMENZÓ ESTE SUEÑO</h3>
-        <div class="divi">
+        <h3 class="biz" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="3000">CÓMO COMENZÓ ESTE SUEÑO</h3>
+        <div class="divi" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="3000">
             <p>“Desde la variedad de productos hasta el color de mi identidad. Qué tan grande debía ser la cocina,
                 qué
                 tan chico tenía que ser el local, tratando de adaptar horarios de atención que pudiera bancar. Y como
@@ -159,7 +166,7 @@
             </div>
             <div class="formulario">
                 <form class="form">
-                    <p> ¿Probaste nuestros productos? Tu opinión nos ayuda.</p>
+                    <p> ¿Probaste nuestros productos? Tu opinión nos importa.</p>
                     <div class="contenedor_estrella">
                         <input type="radio" id="calificacion_1" name="calificacion" value="1" />
                         <label for="calificacion_1" class="check_estrella check_1"></label>
@@ -173,13 +180,17 @@
                         <label for="calificacion_5" class="check_estrella check_5"></label>
                     </div>
                     <textarea placeholder="Deja aqui tu comentario.."></textarea>
-                    <button type="button" class="btn btn-outline-dark m-auto"> <span>ENVIAR</span></button>
+                    <button type="button" class="btn btn-outline-dark m-auto boton_enviar" > <span>ENVIAR</span></button>
                 </form> <!-- Inicio pie de página -->
             </div>
             <p class="copy">Copyright 2022, La Tartería Gourmet</p>
         </footer> <!-- Fin pie de página -->
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
