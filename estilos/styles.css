@@ -1,17 +1,1262 @@
-/* Error: expected "}".
- *      ,
- * 1178 | @media (max-width: 480px) {
- *      |                            ^
- *      '
- *   mi_sass\styles.scss 1178:28  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "}".\a      \2577 \a 1178 \2502  @media (max-width: 480px) {\d\a      \2502                             ^\a      \2575 \a   mi_sass\\styles.scss 1178:28  root stylesheet';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+p {
+  color: black;
+  font-family: "Signika", sans-serif;
+  font-size: 25px;
+}
+
+/*LA TARTERIA*/
+.logotarte {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.logotarteria {
+  width: 10%;
+  margin-left: 10px;
+}
+
+.link_logo_index {
+  width: 150px;
+}
+.link_logo_index:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.media {
+  width: 100%;
+}
+
+.contenedor_slider {
+  display: none;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  background: url(../imagenes/video.mp4);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.boton_menu,
+#boton_menu {
+  display: none;
+}
+
+.cabecera ul {
+  display: flex;
+  margin-right: 20px;
+  flex-direction: row;
+}
+.cabecera li {
+  justify-content: space-between;
+  list-style: none;
+}
+.cabecera a:hover {
+  color: white;
+  text-shadow: 0px 0px 5px white, 0px 0px 7px white, 0px 0px 10px white;
+}
+
+/*SECCION DE PRODUCTOS TARTERIA*/
+#products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: ". titulo titulo ." "tartas ensaladas pizza viernes";
+  gap: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.titulo_products {
+  grid-area: titulo;
+  text-align: center;
+}
+
+.product1 {
+  grid-area: tartas;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.product1 img {
+  width: 100%;
+  transition-delay: 0.2s;
+  transition: ease-in;
+  object-fit: contain;
+  margin-bottom: 28%;
+}
+
+.product2 {
+  grid-area: ensaladas;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.product2 img {
+  width: 100%;
+  transition-delay: 0.2s;
+  transition: ease-in;
+  object-fit: contain;
+  margin-bottom: 23%;
+}
+
+.product3 {
+  grid-area: pizza;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.product3 img {
+  width: 100%;
+  transition-delay: 0.2s;
+  transition: ease-in;
+  object-fit: contain;
+  margin-bottom: 15%;
+}
+
+.product4 {
+  grid-area: viernes;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.product4 img {
+  width: 100%;
+  transition-delay: 0.2s;
+  transition: ease-in;
+  object-fit: contain;
+  margin-bottom: 15%;
+}
+
+.product1 img:hover,
+.product2 img:hover,
+.product3 img:hover,
+.product4 img:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.contenedor_img {
+  width: 100%;
+  height: 100%;
+}
+
+.menu {
+  color: white;
+  font-size: 25px;
+  font-weight: 200;
+  font-family: "Signika", sans-serif;
+  text-decoration: none;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.biz {
+  font-family: "Sigmar One", cursiva;
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.bizt {
+  font-family: "Signika", sans-serif;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3em;
+  color: #EFA600;
+}
+.bizt button {
+  margin-top: 5%;
+  background-color: transparent;
+  color: #EFA600;
+  width: 40%;
+  height: 40px;
+  border: solid #EFA600;
+  font-size: 70%;
+  transition-property: background-color;
+  transition-delay: 0s;
+}
+.bizt button:hover {
+  background-color: #EFA600;
+  color: white;
+  box-shadow: 0px 0px 10px #EFA600, 0px 0px 20px #EFA600, 0px 0px 40px #EFA600;
+}
+
+.divi {
+  display: flex;
+  margin-bottom: 30px;
+  margin: auto;
+  width: 90%;
+  opacity: 1;
+}
+.divi p {
+  font-size: 23px;
+  text-align: justify;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 5%;
+  width: 80%;
+}
+
+.divi2 {
+  display: flex;
+  margin-bottom: 30px;
+  margin: auto;
+  width: 90%;
+}
+.divi2 p {
+  font-size: 23px;
+  text-align: justify;
+  order: 1;
+  width: 80%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 5%;
+}
+
+.img_chef1,
+.img_chef2,
+.img_chef3 {
+  width: 100%;
+}
+
+/*CONTACTO DE LA TARTERIA*/
+.biz_contact {
+  font-family: "Sigmar One", cursiva;
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.titulo_footer {
+  grid-area: titulo;
+}
+
+.contenedor_contacto {
+  grid-area: redes;
+  display: flex;
+}
+.contenedor_contacto a {
+  font-size: 70px;
+  padding: 40px;
+  text-decoration: none;
+  color: black;
+}
+.contenedor_contacto a:hover {
+  transform: scale(1.3);
+}
+
+.formulario {
+  grid-area: formulario;
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+.formulario form {
+  display: flex;
+  flex-direction: row;
+}
+
+.grey {
+  background-color: #EFA600;
+  margin-top: 10%;
+}
+.grey form {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 50px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+footer .check {
+  display: flex;
+}
+
+/*PIE DE PAGINA DE LA TARTERIA*/
+.copy {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  grid-area: copi;
+  margin-top: 5%;
+}
+
+.contenedor_estrella {
+  margin-left: auto;
+  margin-right: auto;
+}
+.contenedor_estrella input {
+  display: none;
+}
+.contenedor_estrella input:checked ~ label {
+  background-image: url("../imagenes/iconoestrella_lleno.png");
+}
+
+.check_1 {
+  order: 5;
+}
+
+.check_2 {
+  order: 4;
+}
+
+.check_3 {
+  order: 3;
+}
+
+.check_4 {
+  order: 2;
+}
+
+.check_5 {
+  order: 1;
+}
+
+.check_estrella {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url("../imagenes/iconoestrella.png") left center no-repeat;
+  background-size: 40px;
+}
+
+textarea {
+  width: 300px;
+  height: 150px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.boton_form {
+  margin: auto;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 480px) {
+  .media {
+    display: none;
+  }
+  .contenedor_slider {
+    display: block;
+  }
+  .logotarteria {
+    display: none;
+  }
+  .link_logo_index {
+    width: 25%;
+  }
+  .cabecera {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  .cabecera ul {
+    flex-direction: column;
+    margin-right: 1%;
+  }
+  .menu {
+    font-size: 0.8em;
+  }
+  .img_boton_menu {
+    width: 5%;
+  }
+  .contenedor {
+    justify-content: right;
+    background-color: transparent;
+  }
+  .boton_menu {
+    display: block;
+    text-align: right;
+    margin-top: 2%;
+    margin-right: 2%;
+  }
+  #boton_menu {
+    display: none;
+  }
+  #boton_menu:checked + .cabecera {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  #products {
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+    grid-template-areas: ". titulo titulo ." "tartas tartas tartas tartas" "ensaladas ensaladas ensaladas ensaladas" "pizza pizza pizza pizza" "viernes viernes viernes viernes";
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .bizt {
+    font-size: 1.2em;
+  }
+  .bizt img {
+    margin-bottom: 8%;
+    width: 100%;
+    height: 200px;
+  }
+  .biz,
+.biz_contact {
+    font-family: "Sigmar One", cursiva;
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #sobre_nosotros {
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+  }
+  .divi {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .divi p {
+    font-size: 15px;
+    width: 100%;
+    margin-top: 10%;
+    order: 1;
+    height: 100%;
+  }
+  .divi2 {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .divi2 p {
+    font-size: 15px;
+    margin-top: 10%;
+    order: 1;
+    height: 80px;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .formulario {
+    display: none;
+  }
+  #contact {
+    grid-template-areas: "titulo titulo titulo titulo" "redes redes redes redes" "copi copi copi copi";
+    width: 100%;
+  }
+  .contenedor_contacto a {
+    font-size: 30px;
+  }
+  .copy {
+    margin-top: 20%;
+  }
+}
+@media (min-width: 481px) and (max-width: 870px) {
+  .media {
+    display: none;
+  }
+  .contenedor_slider {
+    display: block;
+  }
+  .logotarteria {
+    display: none;
+  }
+  .cabecera {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  .cabecera ul {
+    flex-direction: column;
+    margin-right: 1%;
+  }
+  .menu {
+    font-size: 0.8em;
+  }
+  .img_boton_menu {
+    width: 5%;
+  }
+  .boton_menu {
+    display: block;
+    text-align: right;
+    margin-top: 2%;
+    margin-right: 2%;
+  }
+  #boton_menu {
+    display: none;
+  }
+  #boton_menu:checked + .cabecera {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .contenedor {
+    justify-content: right;
+    background-color: transparent;
+  }
+  .biz,
+.biz_contact {
+    font-size: 2em;
+  }
+  .bizt {
+    font-size: 15px;
+  }
+  .bizt button {
+    height: 40%;
+  }
+  #products {
+    width: 80%;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+    grid-template-areas: ". titulo titulo ." "tartas tartas ensaladas ensaladas" "pizza pizza viernes viernes";
+  }
+  #products .bizt {
+    font-size: 1.1em;
+  }
+  #sobre_nosotros {
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+  }
+  .divi {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .divi p {
+    font-size: 1.1em;
+    text-align: justify;
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: auto;
+    order: 1;
+    height: auto;
+  }
+  .divi2 {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .divi2 p {
+    font-size: 1.1em;
+    text-align: justify;
+    margin-top: 10%;
+    margin-bottom: auto;
+    order: 1;
+    height: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .formulario {
+    display: none;
+  }
+  #contact {
+    grid-template-areas: "titulo titulo titulo titulo" "redes redes redes redes" "copi copi copi copi";
+    width: 80%;
+  }
+  .contenedor_contacto a {
+    font-size: 50px;
+    margin-top: 0%;
+  }
+  .copy {
+    margin-top: 20%;
+  }
+}
+@media (min-width: 871px) and (max-width: 991px) {
+  #boton_menu {
+    display: none;
+  }
+  .img_boton_menu {
+    display: none;
+  }
+  .media {
+    display: none;
+  }
+  .contenedor_slider {
+    display: block;
+  }
+  .biz,
+.biz_contact {
+    font-size: 2em;
+  }
+  #products {
+    width: 90%;
+  }
+  .bizt {
+    font-size: 0.9em;
+  }
+  .bizt button {
+    height: 50%;
+  }
+  .divi p,
+.divi2 p {
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+  }
+  .form p {
+    font-size: 15px;
+  }
+  textarea {
+    width: 200px;
+    height: 100px;
+  }
+  .check_estrella {
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+  }
+  form button {
+    width: 20%;
+    height: 10%;
+  }
+  form button span {
+    font-size: 0.8em;
+  }
+  .copy {
+    margin-top: 20%;
+  }
+  .boton_enviar {
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+/*EL MERCADO*/
+.body_mercado {
+  background: url(../imagenes/bannermercado.jpg) no-repeat fixed;
+  background-size: 100%;
+}
+
+.logo_para_volver {
+  width: 8%;
+  margin-right: 8px;
+  margin-top: 6px;
+}
+.logo_para_volver:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.cabecera a {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.parrafo_mercado {
+  color: #FFFFF2;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  width: 70%;
+  text-align: center;
+  margin-bottom: 150px;
+  font-weight: 100;
+}
+
+.parrafo_mercado1 {
+  color: #FFFFF2;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.logo_completo {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  margin-left: 170px;
+  width: 80%;
+}
+
+.collage {
+  width: 100%;
+  margin-top: 60px;
+}
+
+#el_mercado {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.valeygusti {
+  width: 70%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img_valeygusti {
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.parrafo_mercado2 {
+  color: #FFFFF2;
+  font-size: 50px;
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.parrafo_h2 {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+#menu {
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.menu2 {
+  color: whitesmoke;
+  font-size: 20px;
+  font-family: "Signika", sans-serif;
+  text-decoration: none;
+}
+
+.img_mercadillo,
+.img_mercadillo2 {
+  width: 100%;
+}
+
+.collage1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  padding: 10px;
+  margin-left: 170px;
+  margin-right: 170px;
+  margin-top: 200px;
+}
+
+.box {
+  padding-bottom: 10px;
+  width: 100%;
+}
+.box:hover {
+  transform: scale(1.3, 1.3);
+  transition-delay: 4s;
+  transition: ease-in-out;
+  overflow: visible;
+}
+
+.biz_contact_mercado {
+  color: black;
+  font-size: 50px;
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+#contact {
+  grid-template-areas: "titulo titulo titulo titulo" "redes redes redes redes" "copi copi copi copi";
+  width: 100%;
+}
+
+.contenedor_contacto {
+  grid-area: redes;
+}
+.contenedor_contacto a {
+  font-size: 70px;
+  padding: 40px;
+  text-decoration: none;
+  color: black;
+  margin-top: 100px;
+}
+.contenedor_contacto a:hover {
+  transform: scale(1.3);
+}
+
+.titulo_footer {
+  grid-area: titulo;
+}
+
+.grey1 {
+  background-color: #F5F5E9;
+}
+
+.copy {
+  font-size: 12px;
+}
+
+/*RESPONSIVE MERCADO*/
+@media (max-width: 480px) {
+  .logo_completo {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0%;
+    margin-top: 20%;
+  }
+  .logo_para_volver {
+    width: 10%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+  }
+  #menu {
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .menu {
+    font-size: 0.8em;
+  }
+  .boton_menu {
+    display: block;
+    color: #EFA600;
+  }
+  #boton_menu {
+    display: none;
+  }
+  #boton_menu:checked + .cabecera {
+    display: block;
+  }
+  .contenedor {
+    justify-content: right;
+  }
+  .parrafo_mercado2 {
+    font-size: 1em;
+    margin-bottom: 10%;
+  }
+  .parrafo_mercado {
+    font-size: 0.7em;
+    font-family: "Quicksand", sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20%;
+    height: 170px;
+    overflow: scroll;
+    text-align: justify;
+  }
+  .parrafo_mercado1 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+    text-align: justify;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    overflow: scroll;
+    width: 90%;
+  }
+  .img_mercadillo,
+.img_mercadillo2 {
+    width: 80%;
+  }
+  .collage1 {
+    display: none;
+  }
+  #contact {
+    grid-template-areas: "titulo titulo titulo titulo" "redes redes redes redes" "copi copi copi copi";
+    width: 100%;
+  }
+  .contenedor_contacto a {
+    font-size: 2em;
+    padding: 10%;
+    margin-top: 50%;
+  }
+  .contenedor_contacto a:hover {
+    transform: scale(1.3);
+  }
+  .biz_contact_mercado {
+    font-size: 1.3em;
+    margin-top: 10%;
+  }
+}
+@media (min-width: 481px) and (max-width: 991px) {
+  .logo_para_volver {
+    width: 10%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+  }
+  #menu {
+    display: flex;
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .menu {
+    font-size: 0.8em;
+  }
+  .boton_menu {
+    display: block;
+    color: #EFA600;
+  }
+  #boton_menu {
+    display: none;
+  }
+  #boton_menu:checked + .cabecera {
+    display: block;
+  }
+  .contenedor {
+    display: flex;
+    justify-content: right;
+  }
+  .parrafo_mercado2 {
+    font-size: 1em;
+  }
+  .parrafo_mercado {
+    font-size: 0.8em;
+    height: 170px;
+    overflow: scroll;
+    text-align: justify;
+  }
+  .parrafo_mercado1 {
+    font-size: 1em;
+    height: 250px;
+    width: 90%;
+    overflow: scroll;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .img_mercadillo,
+.img_mercadillo2 {
+    width: 80%;
+  }
+  .logo_completo {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0%;
+    margin-top: 20%;
+  }
+  .collage1 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    margin-top: 10%;
+  }
+  .biz_contact_mercado {
+    font-size: 1.8em;
+    margin-top: 5%;
+  }
+  .contenedor_contacto a {
+    font-size: 3em;
+    margin-top: 50%;
+  }
+}
+/*SECCION INFO*/
+.infoutil {
+  background: url(../imagenes/bannerliso.jpg) no-repeat fixed;
+  background-size: 100% 100%;
+}
+
+.logotarte {
+  width: 20%;
+  margin-left: 10px;
+}
+
+.titulo_info {
+  display: flex;
+  justify-content: center;
+  font-family: "Parisienne", cursive;
+  font-size: 100px;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.escrito_info {
+  display: flex;
+  justify-content: center;
+  margin-left: 30%;
+  margin-right: 30%;
+  color: black;
+  font-family: "Signika", sans-serif;
+  font-size: 25px;
+}
+
+.titulo_tarte_tips {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 15%;
+  font-size: 45px;
+  font-family: "Signika", sans-serif;
+  margin-top: 10%;
+}
+
+.escrito_tips {
+  display: flex;
+  justify-content: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  color: black;
+  font-family: "Signika", sans-serif;
+  font-size: 25px;
+  padding-top: 15px;
+}
+
+.contenedor_info {
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  background-color: #EFA600;
+}
+
+.logotarte2 {
+  width: 30%;
+  margin-left: 10px;
+}
+
+.cabecera_info {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+.cabecera_info ul {
+  display: flex;
+  flex-direction: row;
+}
+.cabecera_info li {
+  list-style: none;
+  padding: auto;
+  margin-top: 10px;
+}
+.cabecera_info a:hover {
+  color: white;
+  text-shadow: 0px 0px 5px white, 0px 0px 7px white, 0px 0px 10px white;
+}
+
+.link_logo {
+  margin-left: 300px;
+  width: 30%;
+}
+.link_logo:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.copy {
+  font-size: 12px;
+}
+
+/*RESPONSIVE INFO*/
+@media (max-width: 480px) {
+  .logotarte2 {
+    display: none;
+  }
+  .link_logo {
+    width: 15%;
+    align-items: flex-end;
+    margin-right: 50px;
+  }
+  .cabecera_info {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  .cabecera_info ul {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    align-items: flex-end;
+  }
+  .menu {
+    font-size: 0.8em;
+  }
+  .img_boton_menu {
+    width: 5%;
+  }
+  .boton_menu {
+    display: block;
+    text-align: right;
+    margin-top: 2%;
+    margin-right: 2%;
+  }
+  #boton_menu {
+    display: none;
+  }
+  #boton_menu:checked + .cabecera {
+    display: block;
+  }
+  .contenedor_info {
+    justify-content: right;
+  }
+  .cabecera_info a {
+    justify-content: right;
+  }
+  .titulo_info {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    padding-top: 90px;
+  }
+  .escrito_info p {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    overflow: scroll;
+  }
+  .titulo_tarte_tips {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 30px;
+    padding-top: 50px;
+  }
+  .escrito_tips {
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .copy_info {
+    font-size: 8px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .logotarte2 {
+    display: none;
+  }
+  .link_logo {
+    width: 10%;
+    align-items: flex-end;
+    text-align: right;
+    margin-left: 85%;
+  }
+  .cabecera_info {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  .cabecera_info ul {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    align-items: flex-end;
+  }
+  .menu {
+    font-size: 0.8em;
+  }
+  .img_boton_menu {
+    width: 5%;
+  }
+  .boton_menu {
+    display: block;
+    text-align: right;
+    margin-top: 2%;
+    margin-right: 2%;
+  }
+  #boton_menu {
+    display: none;
+  }
+  #boton_menu:checked + .cabecera {
+    display: block;
+  }
+  .contenedor_info {
+    justify-content: right;
+  }
+  .cabecera_info a {
+    justify-content: right;
+  }
+  .titulo_info {
+    font-size: 50px;
+    padding-top: 90px;
+    padding-bottom: 30px;
+  }
+  .titulo_tarte_tips {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+  .escrito_tips {
+    font-size: 15px;
+  }
+  .escrito_info p {
+    font-size: 15px;
+  }
+}
+@media (min-width: 769px) {
+  .contenedor_info {
+    justify-content: space-between;
+    z-index: 1;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: #EFA600;
+  }
+  .logotarte2 {
+    width: 40%;
+  }
+  .link_logo {
+    width: 20%;
+    margin-right: 40px;
+  }
+  .cabecera_info {
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+  /* NUESTRAS ESPECIALIDADES */
+  .nuestras_especialidades {
+    background: url(../imagenes/bannercontartitas.jpg) no-repeat fixed;
+    margin-top: 10%;
+    background-size: 100% 100%;
+    object-fit: cover;
+  }
+  .logotarte {
+    width: 20%;
+    margin-left: 10px;
+  }
+  .tabla_precios {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .parrafo_de_viernes {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+  }
+  h1 {
+    font-family: "Sigmar One", cursiva;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 10%;
+  }
+  th {
+    font-family: "Signika", sans-serif;
+    font-size: 1.5em;
+  }
+  td {
+    font-family: "Signika", sans-serif;
+  }
+  h2 {
+    font-family: "Signika", sans-serif;
+    font-size: 2.3em;
+    margin-bottom: 5%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
