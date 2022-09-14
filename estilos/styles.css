@@ -379,12 +379,13 @@ textarea {
   .menu {
     font-size: 0.8em;
   }
-  .img_boton_menu {
-    width: 5%;
-  }
   .contenedor {
     justify-content: right;
     background: none;
+  }
+  .contenedor .img_boton_menu {
+    width: 9%;
+    display: inline-block;
   }
   .boton_menu {
     display: block;
@@ -472,9 +473,6 @@ textarea {
   .contenedor_slider {
     display: block;
   }
-  .img_boton_menu {
-    width: 7%;
-  }
   .link_logo_index {
     width: 35%;
   }
@@ -512,6 +510,10 @@ textarea {
   .contenedor {
     justify-content: right;
     background-color: transparent;
+  }
+  .contenedor .img_boton_menu {
+    width: 9%;
+    display: inline-block;
   }
   .biz,
 .biz_contact {
@@ -1283,6 +1285,9 @@ textarea {
     margin-top: 10%;
     background-size: 100% 100%;
     object-fit: cover;
+  }
+  .cabecera li .link_logo_index {
+    width: 30%;
   }
   .logotarte {
     width: 20%;

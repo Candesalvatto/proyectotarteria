@@ -354,10 +354,12 @@ margin-bottom: 15px;}
         font-size: 2.5em;}
         }
     .menu {font-size: 0.8em;}
-    .img_boton_menu {width: 5%;}
+
 
     .contenedor {justify-content: right;
-    background: none;}
+    background: none;
+        .img_boton_menu {width: 9%;
+        display: inline-block;}}
     .boton_menu {display: block;
             text-align: right;
             margin-top: 2%;
@@ -453,7 +455,6 @@ margin-bottom: 15px;}
     .contenedor_slider {
 		display: block;
 	  }
-      .img_boton_menu {width: 7%;}
       .link_logo_index {
         width: 35%;}
 	.logotarteria {display: none;}
@@ -483,7 +484,9 @@ margin-bottom: 15px;}
             }
         }
     .contenedor {justify-content: right;
-    background-color: transparent;}
+    background-color: transparent;
+        .img_boton_menu {width: 9%;
+        display: inline-block;}}
 	.biz,
     .biz_contact {
 		font-size: 1.8em;
@@ -1206,7 +1209,9 @@ margin-left: 85%;}
     background-size: 100% 100%;
     object-fit: cover;
 }
-
+.cabecera {
+    li {.link_logo_index {width: 30%;}}
+}
 .logotarte {
 	width: 20%;
 	margin-left: 10px;
@@ -1266,6 +1271,7 @@ margin-bottom: 10%;}
     .nuestras_especialidades {background: url(../imagenes/bannerliso.jpg) no-repeat fixed;
         object-fit: cover;
 }
+
     .tabla_precios {width: 80%;
         margin-left: auto;
         margin-right: auto;
