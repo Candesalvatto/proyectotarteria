@@ -423,7 +423,7 @@ textarea {
     margin-bottom: 20px;
   }
   #sobre_nosotros {
-    width: 80%;
+    width: 95%;
     justify-content: center;
     margin: auto;
   }
@@ -432,7 +432,7 @@ textarea {
     margin-bottom: 30px;
   }
   .divi p {
-    font-size: 15px;
+    font-size: 0.8em;
     width: 100%;
     margin-top: 10%;
     order: 1;
@@ -864,22 +864,35 @@ textarea {
   #boton_menu:checked + .cabecera {
     display: block;
   }
+  #el_mercado {
+    width: 95%;
+  }
+  #el_mercado .valeygusti {
+    width: 100%;
+  }
+  #el_mercado .parrafo_mercado2 {
+    font-size: 1.7em;
+    margin-bottom: 10%;
+  }
+  #el_mercado h1 {
+    margin-top: 5%;
+  }
+  #el_mercado .img_valeygusti {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
   .contenedor {
     justify-content: right;
   }
-  .parrafo_mercado2 {
-    font-size: 1em;
-    margin-bottom: 10%;
-  }
   .parrafo_mercado {
-    font-size: 0.7em;
+    font-size: 0.8em;
     font-family: "Quicksand", sans-serif;
     display: flex;
     justify-content: center;
     margin-bottom: 20%;
-    height: 170px;
-    overflow: scroll;
+    height: auto;
     text-align: justify;
+    width: 95%;
   }
   .parrafo_mercado1 {
     font-family: "Quicksand", sans-serif;
@@ -889,9 +902,8 @@ textarea {
     margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
-    height: 150px;
-    overflow: scroll;
-    width: 90%;
+    height: auto;
+    width: 95%;
   }
   .img_mercadillo,
 .img_mercadillo2 {
@@ -921,7 +933,7 @@ textarea {
     transform: scale(1.3);
   }
   .biz_contact_mercado {
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-top: 10%;
   }
 }
@@ -1170,26 +1182,33 @@ textarea {
   .titulo_info {
     display: flex;
     justify-content: center;
-    font-size: 40px;
-    padding-top: 90px;
+    font-size: 3em;
+    margin-top: 10%;
+  }
+  .escrito_info {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
   }
   .escrito_info p {
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-    height: 400px;
-    overflow: scroll;
+    font-size: 0.8em;
+    height: auto;
+    text-align: justify;
   }
   .titulo_tarte_tips {
     display: flex;
     justify-content: flex-start;
-    font-size: 30px;
+    font-size: 2em;
     padding-top: 50px;
   }
   .escrito_tips {
-    font-size: 12px;
+    font-size: 0.9em;
     display: flex;
     justify-content: flex-start;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .copy_info {
     font-size: 8px;
@@ -1330,32 +1349,32 @@ textarea {
     object-fit: cover;
   }
   .tabla_precios {
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15%;
   }
   td {
-    font-size: 0.8em;
+    font-size: 1em;
   }
   h1 {
-    font-size: 1.2em;
+    font-size: 1.7em;
     font-family: "Sigmar One", cursiva;
     text-align: center;
     margin-top: 20%;
   }
   h2 {
-    font-size: 1em;
+    font-size: 1.3em;
     margin-top: 20%;
     margin-bottom: 10%;
   }
   .parrafo_de_viernes {
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
   .parrafo_de_viernes p {
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .copy {
     font-size: 0.5em;
