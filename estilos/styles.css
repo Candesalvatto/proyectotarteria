@@ -208,12 +208,20 @@ p {
   margin-right: 5%;
   width: 80%;
 }
+.divi div {
+  margin-top: auto;
+  margin-bottom: auto;
+}
 
 .divi2 {
   display: flex;
   margin-bottom: 30px;
   margin: auto;
   width: 90%;
+}
+.divi2 div {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .divi2 p {
   font-size: 23px;
@@ -279,7 +287,6 @@ p {
   justify-content: flex-end;
   flex-direction: column;
   align-items: flex-end;
-  margin-right: 50px;
 }
 
 footer {
@@ -627,6 +634,11 @@ textarea {
   }
   .bizt button {
     height: 50%;
+  }
+  .divi div,
+.divi2 div {
+    margin-top: auto;
+    margin-bottom: auto;
   }
   .divi p,
 .divi2 p {
@@ -1001,6 +1013,12 @@ textarea {
   #boton_menu:checked + .cabecera {
     display: block;
   }
+  #el_mercado {
+    width: 80%;
+  }
+  #el_mercado .valeygusti {
+    width: 100%;
+  }
   .contenedor {
     display: flex;
     justify-content: right;
@@ -1009,9 +1027,10 @@ textarea {
     font-size: 1em;
   }
   .parrafo_mercado {
-    font-size: 1em;
+    font-size: 0.8em;
     height: auto;
     text-align: justify;
+    width: 100%;
   }
   .parrafo_mercado1 {
     font-size: 1.2em;
@@ -1024,7 +1043,7 @@ textarea {
   }
   .img_mercadillo,
 .img_mercadillo2 {
-    width: 80%;
+    width: 60%;
   }
   .logo_completo {
     width: 100%;
@@ -1034,7 +1053,7 @@ textarea {
     margin-top: 20%;
   }
   .collage1 {
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10%;
@@ -1358,6 +1377,7 @@ textarea {
   }
   td {
     font-family: "Signika", sans-serif;
+    font-size: 1.2em;
   }
   h2 {
     font-family: "Signika", sans-serif;
