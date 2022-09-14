@@ -354,10 +354,10 @@ margin-bottom: 15px;}
         font-size: 2.5em;}
         }
     .menu {font-size: 0.8em;}
-
     .img_boton_menu {width: 5%;}
+
     .contenedor {justify-content: right;
-    background-color: transparent;}
+    background: none;}
     .boton_menu {display: block;
             text-align: right;
             margin-top: 2%;
@@ -395,7 +395,7 @@ margin-bottom: 15px;}
     .biz,
     .biz_contact {
 	font-family: 'Sigmar One', cursiva;
-	font-size: 1.6em;
+	font-size: 1.5em;
 	margin-top: 20px;
 	margin-bottom: 20px;
     }
@@ -446,12 +446,16 @@ margin-bottom: 15px;}
 }
 }
 
+
 @media (min-width: 481px) and (max-width: 870px)
 {
     .media {display: none;}
     .contenedor_slider {
 		display: block;
 	  }
+      .img_boton_menu {width: 7%;}
+      .link_logo_index {
+        width: 35%;}
 	.logotarteria {display: none;}
     .cabecera {display: none;
         position: absolute;
@@ -460,10 +464,11 @@ margin-bottom: 15px;}
         width: 100%;
         ul {
             flex-direction: column;
-            margin-right: 1%;}
+            margin-right: 1%;
+        font-size: 3em;}
         }
         .menu {font-size: 0.8em;}
-        .img_boton_menu {width: 5%;}
+
         .boton_menu {display: block;
         text-align: right;
         margin-top: 2%;
@@ -481,7 +486,7 @@ margin-bottom: 15px;}
     background-color: transparent;}
 	.biz,
     .biz_contact {
-		font-size: 2em;
+		font-size: 1.8em;
 	}
     .bizt {
         font-size: 15px;
@@ -536,7 +541,8 @@ margin-bottom: 15px;}
             width: 80%;
     }	
     .contenedor_contacto {
-        a {font-size: 50px;
+
+        a {font-size: 4em;
             margin-top: 0%;}
 
     }
@@ -549,10 +555,29 @@ margin-bottom: 15px;}
 
     #boton_menu {display: none;}
 	.img_boton_menu {display: none;}
-    .media {display: none;}
+    .media {display: block;}
+    .logotarteria {width: 10%;
+}
+.link_logo_index {width: 30%;}
     .contenedor_slider {
-		display: block;
+		display: none;
 	  }
+      .cabecera {
+        ul {
+            display: flex;
+            margin-right: 20px;
+            flex-direction: row;
+            }
+        li {
+            justify-content: space-between;
+            list-style: none;
+            font-size: 1.2em;
+            }
+        a:hover {
+            color: white;
+            text-shadow: 0px 0px 5px white, 0px 0px 7px white, 0px 0px 10px white;
+            }
+    }
       .biz,
       .biz_contact {
           font-size: 2em;
@@ -612,19 +637,18 @@ margin: 0;}
 
 .parrafo_mercado {
 	color: #FFFFF2;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Signika', sans-serif;
 	font-size: 30px;
 	width: 70%;
 	text-align: center;
 	margin-bottom: 150px;
-	font-weight: 100;
+
 }
 
 .parrafo_mercado1 {
 	color: #FFFFF2;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Signika', sans-serif;
 	font-size: 20px;
-	font-weight: 100;
 }
 
 .logo_completo {
@@ -636,6 +660,7 @@ margin: 0;}
 
 .collage {width: 100%;
     margin-top: 60px;}
+    .slider_mercado {display: none;}
 
 #el_mercado {width: 90%;
         margin-left: auto;
@@ -719,7 +744,7 @@ margin-right: 170px;
 	grid-area: redes;
 
     a {font-size: 70px;
-		padding: 40px;
+		padding: 20px;
 		text-decoration: none;
 		color: black;
 		margin-top: 100px;
@@ -740,6 +765,10 @@ margin-right: 170px;
 	/*RESPONSIVE MERCADO*/
 
 @media (max-width: 480px) {
+    .body_mercado {
+        background: url(../imagenes/bannermercado.jpg) no-repeat fixed;
+        background-size: 100% 100%;
+    }
 
     .logo_completo {
         width: 100%;
@@ -806,6 +835,13 @@ margin-right: 170px;
 .collage1 {
 	display: none;}
 
+.slider_mercado {display: block;
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 10%;
+margin-bottom: 10%;}
+
 
 #contact {
 	grid-template-areas: "titulo titulo titulo titulo"
@@ -826,8 +862,21 @@ margin-right: 170px;
 
 
 }
+@media (min-width: 481px) and (max-width: 780px){
+.collage1 {display: none;}
+.slider_mercado {display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;}
+}
 
 @media (min-width: 481px) and (max-width: 991px){
+    .body_mercado {
+        background: url(../imagenes/bannermercado.jpg) no-repeat fixed;
+        background-size: 100% 100%;
+    }
 
 .logo_para_volver {width: 10%;
 		position: absolute;
@@ -858,17 +907,15 @@ color: $color_tarteria;}
         font-size: 1em;
     }
     .parrafo_mercado {
-        font-size: 0.8em;
-        height: 170px;
-        overflow: scroll;
+        font-size: 1em;
+        height: auto;
         text-align: justify;
     }
     
     .parrafo_mercado1 {
-    font-size: 1em;
-    height: 250px;
-    width: 90%;
-    overflow: scroll;
+    font-size: 1.2em;
+    height: auto;
+    width: 80%;
     margin-top: 10%;
     margin-bottom: 5%;
     margin-right: auto;
@@ -889,15 +936,21 @@ margin-left: auto;
 margin-right: auto;
 margin-bottom: 10%;
 margin-top: 10%}
-.biz_contact_mercado {font-size: 1.8em;
+.biz_contact_mercado {font-size: 2.8em;
 margin-top: 5%;}
 
-.contenedor_contacto {a {font-size: 3em;
+.contenedor_contacto {a {font-size: 4em;
 
 	margin-top: 50%;
 	}
 }
 }
+@media (min-width: 992px) {
+    .body_mercado {
+        background: url(../imagenes/bannermercado.jpg) no-repeat fixed;
+        background-size: 100% 100%;
+    }}
+
 
 /*SECCION INFO*/
 
@@ -996,7 +1049,7 @@ background-size: 100% 100%;
 
 @media (max-width: 480px) {
 
-    .logotarte2 {display: none;}
+
     .link_logo {width: 15%;
     align-items: flex-end;
     margin-right: 50px;}
@@ -1012,8 +1065,9 @@ background-size: 100% 100%;
                     align-items: flex-end;
                     }
 }
+.logotarte {width: 40%;}
 .menu {font-size: 0.8em;}
-.img_boton_menu {width: 5%;}
+.img_boton_menu {width: 30%;}
 .boton_menu {display: block;
 text-align: right;
 margin-top: 2%;
@@ -1072,6 +1126,7 @@ margin-right: 2%;}
 align-items: flex-end;
 text-align: right;
 margin-left: 85%;}
+.img_boton_menu {width: 20%;}
     .cabecera_info {display: none;
     position: absolute;
     top: 100%;
@@ -1085,7 +1140,7 @@ margin-left: 85%;}
         }
     }
     .menu {font-size: 0.8em;}
-    .img_boton_menu {width: 5%;}
+
     .boton_menu {display: block;
     text-align: right;
     margin-top: 2%;
@@ -1182,7 +1237,7 @@ margin-bottom: 5%;}
 { 
     .nuestras_especialidades {background: url(../imagenes/bannerliso.jpg) no-repeat fixed;
     object-fit: cover;
-width: 100%;}
+}
 
         .tabla_precios {width: 80%;
         margin-left: auto;
@@ -1202,15 +1257,15 @@ margin-bottom: 10%;}
         margin-right: auto;
     p{font-size: 0.8em;}}
     .copy {font-size: 0.5em;}
-    .logotarte {width: 30%;}
+    .logotarte {width: 40%;}
 .contenedor {background-color: rgba(0,0,0,0.2);}
-.img_boton_menu {width: 15%;}
+
 
     }
 @media (min-width: 481px) and (max-width: 770px) {
     .nuestras_especialidades {background: url(../imagenes/bannerliso.jpg) no-repeat fixed;
         object-fit: cover;
-    width: 100%;}
+}
     .tabla_precios {width: 80%;
         margin-left: auto;
         margin-right: auto;
@@ -1230,5 +1285,5 @@ margin-bottom: 10%;}
     .copy {font-size: 0.7em;}
     .logotarte {width: 30%;}
     .contenedor {background-color: rgba(0,0,0,0.2);}
-.img_boton_menu {width: 20%;}
+
 }

@@ -384,7 +384,7 @@ textarea {
   }
   .contenedor {
     justify-content: right;
-    background-color: transparent;
+    background: none;
   }
   .boton_menu {
     display: block;
@@ -417,7 +417,7 @@ textarea {
   .biz,
 .biz_contact {
     font-family: "Sigmar One", cursiva;
-    font-size: 1.6em;
+    font-size: 1.5em;
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -472,6 +472,12 @@ textarea {
   .contenedor_slider {
     display: block;
   }
+  .img_boton_menu {
+    width: 7%;
+  }
+  .link_logo_index {
+    width: 35%;
+  }
   .logotarteria {
     display: none;
   }
@@ -485,12 +491,10 @@ textarea {
   .cabecera ul {
     flex-direction: column;
     margin-right: 1%;
+    font-size: 3em;
   }
   .menu {
     font-size: 0.8em;
-  }
-  .img_boton_menu {
-    width: 5%;
   }
   .boton_menu {
     display: block;
@@ -511,7 +515,7 @@ textarea {
   }
   .biz,
 .biz_contact {
-    font-size: 2em;
+    font-size: 1.8em;
   }
   .bizt {
     font-size: 15px;
@@ -569,7 +573,7 @@ textarea {
     width: 80%;
   }
   .contenedor_contacto a {
-    font-size: 50px;
+    font-size: 4em;
     margin-top: 0%;
   }
   .copy {
@@ -584,10 +588,30 @@ textarea {
     display: none;
   }
   .media {
-    display: none;
+    display: block;
+  }
+  .logotarteria {
+    width: 10%;
+  }
+  .link_logo_index {
+    width: 30%;
   }
   .contenedor_slider {
-    display: block;
+    display: none;
+  }
+  .cabecera ul {
+    display: flex;
+    margin-right: 20px;
+    flex-direction: row;
+  }
+  .cabecera li {
+    justify-content: space-between;
+    list-style: none;
+    font-size: 1.2em;
+  }
+  .cabecera a:hover {
+    color: white;
+    text-shadow: 0px 0px 5px white, 0px 0px 7px white, 0px 0px 10px white;
   }
   .biz,
 .biz_contact {
@@ -658,19 +682,17 @@ textarea {
 
 .parrafo_mercado {
   color: #FFFFF2;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Signika", sans-serif;
   font-size: 30px;
   width: 70%;
   text-align: center;
   margin-bottom: 150px;
-  font-weight: 100;
 }
 
 .parrafo_mercado1 {
   color: #FFFFF2;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Signika", sans-serif;
   font-size: 20px;
-  font-weight: 100;
 }
 
 .logo_completo {
@@ -683,6 +705,10 @@ textarea {
 .collage {
   width: 100%;
   margin-top: 60px;
+}
+
+.slider_mercado {
+  display: none;
 }
 
 #el_mercado {
@@ -777,7 +803,7 @@ textarea {
 }
 .contenedor_contacto a {
   font-size: 70px;
-  padding: 40px;
+  padding: 20px;
   text-decoration: none;
   color: black;
   margin-top: 100px;
@@ -800,6 +826,10 @@ textarea {
 
 /*RESPONSIVE MERCADO*/
 @media (max-width: 480px) {
+  .body_mercado {
+    background: url(../imagenes/bannermercado.jpg) no-repeat fixed;
+    background-size: 100% 100%;
+  }
   .logo_completo {
     width: 100%;
     margin-right: auto;
@@ -868,6 +898,14 @@ textarea {
   .collage1 {
     display: none;
   }
+  .slider_mercado {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
   #contact {
     grid-template-areas: "titulo titulo titulo titulo" "redes redes redes redes" "copi copi copi copi";
     width: 100%;
@@ -885,7 +923,24 @@ textarea {
     margin-top: 10%;
   }
 }
+@media (min-width: 481px) and (max-width: 780px) {
+  .collage1 {
+    display: none;
+  }
+  .slider_mercado {
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+}
 @media (min-width: 481px) and (max-width: 991px) {
+  .body_mercado {
+    background: url(../imagenes/bannermercado.jpg) no-repeat fixed;
+    background-size: 100% 100%;
+  }
   .logo_para_volver {
     width: 10%;
     position: absolute;
@@ -920,16 +975,14 @@ textarea {
     font-size: 1em;
   }
   .parrafo_mercado {
-    font-size: 0.8em;
-    height: 170px;
-    overflow: scroll;
+    font-size: 1em;
+    height: auto;
     text-align: justify;
   }
   .parrafo_mercado1 {
-    font-size: 1em;
-    height: 250px;
-    width: 90%;
-    overflow: scroll;
+    font-size: 1.2em;
+    height: auto;
+    width: 80%;
     margin-top: 10%;
     margin-bottom: 5%;
     margin-right: auto;
@@ -954,12 +1007,18 @@ textarea {
     margin-top: 10%;
   }
   .biz_contact_mercado {
-    font-size: 1.8em;
+    font-size: 2.8em;
     margin-top: 5%;
   }
   .contenedor_contacto a {
-    font-size: 3em;
+    font-size: 4em;
     margin-top: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .body_mercado {
+    background: url(../imagenes/bannermercado.jpg) no-repeat fixed;
+    background-size: 100% 100%;
   }
 }
 /*SECCION INFO*/
@@ -1061,9 +1120,6 @@ textarea {
 
 /*RESPONSIVE INFO*/
 @media (max-width: 480px) {
-  .logotarte2 {
-    display: none;
-  }
   .link_logo {
     width: 15%;
     align-items: flex-end;
@@ -1082,11 +1138,14 @@ textarea {
     margin-right: 5%;
     align-items: flex-end;
   }
+  .logotarte {
+    width: 40%;
+  }
   .menu {
     font-size: 0.8em;
   }
   .img_boton_menu {
-    width: 5%;
+    width: 30%;
   }
   .boton_menu {
     display: block;
@@ -1144,6 +1203,9 @@ textarea {
     text-align: right;
     margin-left: 85%;
   }
+  .img_boton_menu {
+    width: 20%;
+  }
   .cabecera_info {
     display: none;
     position: absolute;
@@ -1159,9 +1221,6 @@ textarea {
   }
   .menu {
     font-size: 0.8em;
-  }
-  .img_boton_menu {
-    width: 5%;
   }
   .boton_menu {
     display: block;
@@ -1264,7 +1323,6 @@ textarea {
   .nuestras_especialidades {
     background: url(../imagenes/bannerliso.jpg) no-repeat fixed;
     object-fit: cover;
-    width: 100%;
   }
   .tabla_precios {
     width: 80%;
@@ -1298,20 +1356,16 @@ textarea {
     font-size: 0.5em;
   }
   .logotarte {
-    width: 30%;
+    width: 40%;
   }
   .contenedor {
     background-color: rgba(0, 0, 0, 0.2);
-  }
-  .img_boton_menu {
-    width: 15%;
   }
 }
 @media (min-width: 481px) and (max-width: 770px) {
   .nuestras_especialidades {
     background: url(../imagenes/bannerliso.jpg) no-repeat fixed;
     object-fit: cover;
-    width: 100%;
   }
   .tabla_precios {
     width: 80%;
@@ -1346,9 +1400,6 @@ textarea {
   }
   .contenedor {
     background-color: rgba(0, 0, 0, 0.2);
-  }
-  .img_boton_menu {
-    width: 20%;
   }
 }
 
