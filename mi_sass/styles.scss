@@ -17,7 +17,8 @@ p {
 /*LA TARTERIA*/
 
 .logotarte {
-    width: 100%;
+    width: 180px;
+margin-top: 1%;
 }
 
 
@@ -60,8 +61,10 @@ p {
         justify-content: space-between;
         list-style: none;
 
+
         .link_logo_index {
-            width: 100%;
+            width: 180px;
+            
 
             &:hover {
                 transform: scale(1.1, 1.1);
@@ -188,7 +191,7 @@ p {
     display: flex;
     flex-direction: column;
     font-size: 1.3em;
-    color: $color_tarteria;
+    color: $color_tarteria;}
 
 
 
@@ -394,11 +397,15 @@ p {
             left: 0;
             width: 100%;
 
+
+
+
             ul {
                 flex-direction: column;
                 margin-right: 1%;
                 font-size: 2.5em;
             }
+
         }
 
         .menu {
@@ -421,6 +428,7 @@ p {
             text-align: right;
             margin-top: 2%;
             margin-right: 2%;
+
         }
 
         #boton_menu {
@@ -547,6 +555,7 @@ p {
             left: 0;
             width: 100%;
 
+
             ul {
                 flex-direction: column;
                 margin-right: 1%;
@@ -563,6 +572,7 @@ p {
             text-align: right;
             margin-top: 2%;
             margin-right: 2%;
+
         }
 
         #boton_menu {
@@ -581,7 +591,7 @@ p {
             background-color: transparent;
 
             .img_boton_menu {
-                width: 20%;
+                width: 25%;
                 display: inline-block;
             }
         }
@@ -717,20 +727,20 @@ p {
                 .link_logo_index {
                     width: 100%;
                     margin-top: auto;
-                    margin-bottom: auto;
+                    margin-bottom: auto;}
 
 
                     &:hover {
                         transform: scale(1.1, 1.1);
                     }
                 }
-            }
+        }
 
             a:hover {
                 color: white;
                 text-shadow: 0px 0px 5px white, 0px 0px 7px white, 0px 0px 10px white;
             }
-        }
+        
 
         .biz,
         .biz_contact {
@@ -801,7 +811,7 @@ p {
             margin: 0;
         }
 
-    }
+}
 
 
     /*EL MERCADO*/
@@ -997,7 +1007,7 @@ p {
         }
 
         .logo_para_volver {
-            width: 10%;
+            width: 15%;
             position: absolute;
             top: 0%;
             right: 0%;
@@ -1129,7 +1139,7 @@ p {
         .collage1 {
             display: none;
         }
-
+.logo_para_volver {width: 15%;}
         .slider_mercado {
             display: block;
             width: 70%;
@@ -1175,10 +1185,8 @@ p {
         }
 
         .logo_para_volver {
-            width: 10%;
-            position: absolute;
-            top: 0%;
-            right: 0%;
+            width: 15%;
+
         }
 
         #menu {
@@ -1294,7 +1302,7 @@ p {
     }
 
     .logotarte {
-        width: 20%;
+        width: 30%;
         margin-left: 10px;
     }
 
